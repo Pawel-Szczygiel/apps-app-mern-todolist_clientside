@@ -1,5 +1,5 @@
 import axios from 'axios';
-const apiUrl = 'http://localhost:3001/api/tasks';
+const apiUrl = 'https://app-mern-todolist.herokuapp.com';
 
 export const getTasks = () => axios.get(`${apiUrl}/show`)
     .then(response => response.data)
