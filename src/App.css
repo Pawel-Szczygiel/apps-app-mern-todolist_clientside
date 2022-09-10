@@ -105,6 +105,12 @@ code {
   border-color: lightseagreen;
 }
 
+.buttons-box button:focus,
+.todo-list button:focus  {
+  color: LightSeaGreen;
+  border-color: lightseagreen;
+}
+
 
 .info-left {
   margin-top: 20px;
@@ -143,7 +149,6 @@ input:checked[type="checkbox"]::before
    width: 10px;
    border-color: #0f0;
    transform: rotate(45deg) translate(5px, -10px);
-   
 }
 
 label
