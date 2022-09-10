@@ -30,16 +30,17 @@ const Tasks = () => {
     
 
     const handleAddTodo = async () => {
+       
         if (!!inputValue.length) {
             const task = {
-                todo: inputValue
+                todo: inputValue.trim()
             }
             await addTask(task);
             setInput('');
         }
     }
 
-    const handleChange = e => setInput(e.target.value.trim());
+    const handleChange = e => setInput(e.target.value);
     
     const toggleTodo = async id => {
            
