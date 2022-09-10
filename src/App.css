@@ -143,6 +143,7 @@ input:checked[type="checkbox"]::before
    width: 10px;
    border-color: #0f0;
    transform: rotate(45deg) translate(5px, -10px);
+   
 }
 
 label
