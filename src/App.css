@@ -23,8 +23,8 @@ code {
 
 .todo-box {
   position: relative;
-  width: 100%;
-  max-width: 600px;
+  min-width: 300px;
+  max-width: 700px;
   min-height: 300px;
   margin: 0 auto;
   margin-top: 100px;
@@ -52,7 +52,7 @@ code {
 
 .input-box span {
   position: absolute;
-  left: 30px;
+  left: 10%;
   color: rgba(255, 255, 255, 0.25);
   transform: translate(10px, -7px);
   font-size: 12px;
@@ -66,7 +66,7 @@ code {
 }
 
 .inputTodo:focus~ span {
-  transform: translateX(450px);
+  transform: translateX(80%);
   color: LightSeaGreen;
   border-left: 1px solid LightSeaGreen;
   border-right: 1px solid LightSeaGreen;
