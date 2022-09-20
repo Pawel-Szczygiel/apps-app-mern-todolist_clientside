@@ -29,6 +29,7 @@ code {
   min-height: 300px;
   margin: 0 auto;
   margin-top: 100px;
+  overflow: hidden;
 
 }
 
@@ -68,7 +69,7 @@ code {
 }
 
 .inputTodo:focus~ span {
-  left: calc(100% - 60px);
+  left: calc(100% - 100px);
   color: LightSeaGreen;
   border-left: 1px solid LightSeaGreen;
   border-right: 1px solid LightSeaGreen;
