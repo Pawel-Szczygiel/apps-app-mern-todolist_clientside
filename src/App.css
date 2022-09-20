@@ -38,6 +38,7 @@ code {
 }
 
 .inputTodo {
+  position: relative;
   width: 100%;
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -53,7 +54,6 @@ code {
 .input-box span {
   position: absolute;
   left: 30px;
-  right: auto;
   color: rgba(255, 255, 255, 0.25);
   transform: translate(10px, -7px);
   font-size: 12px;
@@ -63,12 +63,11 @@ code {
   border-left: 1px solid rgba(255, 255, 255, 0.25);
   border-right: 1px solid rgba(255, 255, 255, 0.25);
   letter-spacing: 3px;
-  transition: all 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 
 .inputTodo:focus~ span {
-  left: auto;
-  right: -60px;
+  transform: translateX( 400px );
   color: LightSeaGreen;
   border-left: 1px solid LightSeaGreen;
   border-right: 1px solid LightSeaGreen;
