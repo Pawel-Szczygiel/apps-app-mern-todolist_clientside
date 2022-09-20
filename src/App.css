@@ -69,7 +69,7 @@ code {
 }
 
 .inputTodo:focus~ span {
-  left: calc(100% - 150px);
+  left: calc(100% - 120px);
   color: LightSeaGreen;
   border-left: 1px solid LightSeaGreen;
   border-right: 1px solid LightSeaGreen;
