@@ -6,7 +6,6 @@
 }
 
 body {
-  
   height: 100vh;
   background: #1c2b3a;
   color: rgba(255, 255, 255, 0.25);
@@ -22,10 +21,9 @@ code {
     monospace;
 }
 
-
 .todo-box {
   position: relative;
-  min-width: 350px;
+  width: 100%;
   max-width: 600px;
   min-height: 300px;
   margin: 0 auto;

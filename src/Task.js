@@ -15,17 +15,17 @@ const Tasks = () => {
     const [inputValue, setInput] = useState('');
 
 
-    useEffect(() => {
+    async function getData(){
         try {
-            async function getData(){
                 setTasks( await getTasks())
             }
-            getData();
-        } catch (error) {
+         catch (error) {
             console.log(error)
         }
-        
-        return () => {};
+    }
+
+    useEffect(() => {
+        getData();
     }, [inputValue]);
     
 
@@ -59,7 +59,6 @@ const Tasks = () => {
     }
 
     const handleDelete = async id => {
-       
         try {
             const newTasks = tasks.filter(task => task._id !== id);
             setTasks(newTasks)
