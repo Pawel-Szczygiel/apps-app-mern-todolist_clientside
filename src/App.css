@@ -63,12 +63,12 @@ code {
   border-left: 1px solid rgba(255, 255, 255, 0.25);
   border-right: 1px solid rgba(255, 255, 255, 0.25);
   letter-spacing: 3px;
-  transition: 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .inputTodo:focus~ span {
   left: auto;
-  right: -30px;
+  right: -60px;
   color: LightSeaGreen;
   border-left: 1px solid LightSeaGreen;
   border-right: 1px solid LightSeaGreen;
